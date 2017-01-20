@@ -385,7 +385,7 @@ class GetResponse
         $this->http_status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 
         curl_close($curl);
-        return (object)$response;
+        return $response;
     }
 
     /**
